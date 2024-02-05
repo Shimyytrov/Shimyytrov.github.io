@@ -6,6 +6,12 @@
     font-family: universal;
     src: url(fonts/pala.ttf);
     unicode-range:U+00-3FF, U+1E00-1FFF, U+2200-22FF;
+    font-style: normal;
+}
+@font-face {
+    font-family: eng-i;
+    src: url(fonts/palai.ttf);
+    font-style: italic, oblique;
 }
 @font-face {
     font-family: universal;

@@ -5,7 +5,7 @@
 @font-face {
     font-family: universal;
     src: url(fonts/pala.ttf);
-    unicode-range:U+00-3FF, U+1E00-1FFF, U+2200-22FF;
+    unicode-range:U+00-3FF, U+1E00-1FFF, U+2200-22FF, U+201C-2019;
     font-style: normal;
 }
 @font-face {
@@ -21,7 +21,7 @@
 @font-face {
     font-family: universal;
     src: url(fonts/yumin.ttf);
-    unicode-range:U+2014, U+A5, U+4E00-9FFF, U+30??, U+FF00-FF9F, u+2019;
+    unicode-range:U+2014, U+A5, U+4E00-9FFF, U+30??, U+FF00-FF9F;
 }
 .center {
     margin-left: auto;

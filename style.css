@@ -10,6 +10,11 @@
 }
 @font-face {
     font-family: eng-i;
+    src: url(fonts/yumin.ttf);
+    unicode-range:U+2014, U+A5, U+4E00-9FFF, U+30??, U+FF00-FF9F;
+}
+@font-face {
+    font-family: eng-i;
     src: url(fonts/palai.ttf);
     font-style: italic, oblique;
 }

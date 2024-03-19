@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>TITLE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <script>
+      {
+        var OSName = "Unknown OS";
+        if (navigator.userAgent.indexOf("Win") != -1) OSName = "Windows";
+        if (navigator.userAgent.indexOf("Mac") != -1) OSName = "Macintosh";
+        if (navigator.userAgent.indexOf("Linux") != -1) OSName = "Linux";
+        if (navigator.userAgent.indexOf("Android") != -1) OSName = "Android";
+        if (navigator.userAgent.indexOf("like Mac") != -1) OSName = "iOS";
+        console.log('Your OS: ' + OSName);
+        let head = document.getElementsByTagName('HEAD')[0];
+        let link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        if (OSName = "Android" || "iOS") link.href = '../style-mobile.css';
+        if (OSName != "Android" || "iOS") link.href = '../style.css';
+        head.appendChild(link);
+      }
+    </script>
+  </head>
+  <body>
+    <table class="center" style="width: 720px;" boarder="0">
+      <tbody>
+        <tr>
+          <td style="text-align: left; vertical-align: top; background-color: white;">
+            <p style="font-family: universal;">手機用戶建議橫屏觀看，體驗可能會更佳。</p>
+            <p style="font-family: universal;"><a href="../index.html" style="text-decoration:none">返回主頁</a></p>
+            <center><p style="font-family: universal;"><a href=".html" style="text-decoration:none">上一話</a>————<a href=".html" style="text-decoration:none">下一話</a></p></center>
+            <center><h1 style="font-family: universal;">XX. <ruby>標題<rt>Title in Another Lingua</rt></ruby></h1></center>
+            <hr>
+            <p style="font-family: universal;">
+              
+            </p>
+            <hr>
+            <center><p style="font-family: universal;"><a href=".html" style="text-decoration:none">上一話</a>————<a href=".html" style="text-decoration:none">下一話</a></p></center>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

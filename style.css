@@ -35,6 +35,11 @@
 body {
     font-size: 125%;
 }
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 225%;
+    }
+}
 rt {
     font-size: 80%;
     font-weight: 550;

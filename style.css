@@ -28,6 +28,10 @@
     src: url(fonts/yumin.ttf);
     unicode-range:U+2014, U+A5, U+4E00-9FFF, U+30??, U+FF00-FF9F;
 }
+@font-face {
+    font-family: elvish;
+    src: url(fonts/elvish.ttf);
+}
 .center {
     margin-left: auto;
     margin-right: auto;

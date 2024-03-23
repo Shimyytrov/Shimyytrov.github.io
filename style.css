@@ -33,6 +33,12 @@
     src: url(fonts/HanaMinA.otf);
 }
 @font-face {
+    font-family: HanaMin;
+    src: url(fonts/pala.ttf);
+    unicode-range:U+00-3FF, U+1E00-1FFF, U+2200-22FF, U+201C-2019;
+    font-style: normal;
+}
+@font-face {
     font-family: sch-elf;
     src: url(fonts/elvish_min.ttf);
 }

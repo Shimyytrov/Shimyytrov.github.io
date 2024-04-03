@@ -64,3 +64,6 @@ p {
 u {
     text-underline-offset: 5px;
 }
+a {
+    text-decoration-line: none;
+}

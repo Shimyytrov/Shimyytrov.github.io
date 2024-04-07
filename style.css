@@ -67,3 +67,15 @@ u {
 a {
     text-decoration-line: none;
 }
+
+/* Quran Arabic Contain */
+@font-face {
+    font-family: universal;
+    src: url(fonts/quran.ttf);
+    unicode-range:U+600-6FF, U+FB50-FDFF
+}
+@font-face {
+    font-family: HanaMin;
+    src: url(fonts/quran.ttf);
+    unicode-range:U+600-6FF, U+FB50-FDFF
+}

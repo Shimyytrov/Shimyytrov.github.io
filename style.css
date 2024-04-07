@@ -73,3 +73,7 @@ a {
     font-family: schArabic;
     src: url(fonts/quran.ttf);
 }
+@font-face {
+    font-family: schArabicTwo;
+    src: url(fonts/quranTwo.ttf);
+}

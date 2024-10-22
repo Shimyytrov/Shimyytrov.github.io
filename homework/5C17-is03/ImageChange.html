@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>The bulb</title>
+    <script>
+      function turn(status) {
+        bulb.src = status==1 ? "bulb_On.gif" : "bulb_Off.gif";
+      }
+    </script>
+  </head>
+  <body>
+    <p>移動滑鼠至燈泡，開啟電源<br>
+      <br>
+      <span onmouseover="turn(1)" onmouseout="turn(0)"><img id="bulb" src="bulb_Off.gif"></span>
+    </p>
+  </body>
+</html>

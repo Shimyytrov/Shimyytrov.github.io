@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>English Quiz for kids</title>
+<style type="text/css">
+.Heading {
+	text-align: center;
+	font-size: 20px;
+	color: #00F;
+}
+</style>
+<script>
+function check() {
+	let right_answer=0;				// 設定一個變量，數算有多少題答對。
+	if (document.qz.MC1.value=="A")		// 第一題的答案檢查
+		right_answer++;
+	else
+		document.getElementById("MC1Ans").innerHTML="<span id='MC1Ans' style='color:red'>A. German Reich</span>";	// 若回答錯誤，修改HTML碼，以紅字顯示正確答案。
+	if (document.qz.MC2.value=="B")	// 第二題
+		right_answer++;
+	else
+		document.getElementById("MC2Ans").innerHTML="<span id='MC2Ans' style='color:red'>B. Welcome to the official webpage!</span>";
+	if (document.qz.Blank1.value=="see")	// 第三題
+		right_answer++;
+	else
+		document.getElementById("Blank1Ans").hidden=false;	// hidden是一布爾變量
+	if (document.qz.Blank2.value=="This")	// 第四題
+		right_answer++;
+	else
+		document.getElementById("Blank2Ans").hidden=false;
+	document.getElementById("TotalMarks").innerText="Total mark(s): "+ right_answer;	// 輸出總分
+}
+</script>
+</head>
+
+<body>
+  <p class="Heading">English Quiz for kids (1 mark for each)</p>
+  <form name="qz" method="post" action="javascript:check()">
+  <p>1. Which country started the Second World War?<br>
+    <input type="radio" name="MC1" value="A"> <span id="MC1Ans">A. German Reich</span><br>
+    <input type="radio" name="MC1" value="B"> B. Weimar Republic<br>
+    <input type="radio" name="MC1" value="C"> C. German Democratic Republic<br>
+    <input type="radio" name="MC1" value="D"> D. Federal Republic of Germany</p>
+  <p>2. Which is the correct translation of "Vællkommå tyll offisiellhuvudsidy!"?<br>
+    <input type="radio" name="MC2" value="A"> A. Welcome till the official side!<br>
+    <input type="radio" name="MC2" value="B"> <span id="MC2Ans">B. Welcome to the official webpage!</span><br>
+    <input type="radio" name="MC2" value="C"> C. Welcoming till the office side!<br>
+    <input type="radio" name="MC2" value="D"> D. Welcoming to the official webpage!</p>
+  <p>3. I use my eyes to <input name="Blank1" type="text" size="10"><span id="Blank1Ans" hidden style="color:red"> see</span>.</p>
+  <p>4. <input name="Blank2" type="text" size="10"><span id="Blank2Ans" hidden style="color:red"> This</span> is Peter. He is my best friend.</p>
+  <p><input type="submit" name="submit" value="遞交"></p>
+  </form>
+  <p id="TotalMarks" style="font-size:18px;">&nbsp;</p>
+</body>
+</html>

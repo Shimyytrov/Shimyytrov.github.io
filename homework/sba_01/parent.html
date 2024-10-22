@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.center {
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+		}
+		body {
+			margin-left: 25%;
+			margin-right: 25%;
+		}
+	</style>
+    <meta charset="UTF-8">
+    <title>BMI - 家長</title>
+	<script>
+	function CalBMI() {
+		w = document.getElementById("w").value;
+		h = document.getElementById("h").value;
+		bmi = w / h**2;
+		document.getElementById("BMI").innerText = bmi;
+	}
+	</script>
+</head>
+<body>
+	<h1 class="center">光復高中 學生體質記錄系統 - 家長</h1>
+	<form method="POST" action="SaveBMI.php">
+	<p>學生姓名</p>
+	<input type="radio" name="name" value="陳大文">陳大文<input type="radio" name="name" value="李小龍">李小龍<input type="radio" name="name" value="張美蘭">張美蘭<input type="radio" name="name" value="黃仲橋">黃仲橋<input type="radio" name="name" value="何國忠">何國忠
+	<p>輸入資料</p>
+	<p style="margin-left:20px">
+		體重(kg)：<input type="number" step="0.1" id="w" name="weight"><br><br>
+		身高(m)：<input type="number" step="0.01" id="h" name="height"> &nbsp; <button type="button" onclick="CalBMI()">顯示BMI</button>： <span id="BMI">&nbsp;</span>
+	</p>
+	<p><input type="submit" value="更新資料"></p>
+	</form>
+</body>
+</html>

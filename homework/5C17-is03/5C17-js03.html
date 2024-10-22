@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>WAKE THE HELL UP</title>
+    <script>
+      function turn(status) {
+        let hit = new Audio('bonk.mp3');
+        bonk.src = status==1 ? "hit_head2.png" : "hit_head1.png";
+        hit.play();
+      }
+    </script>
+  </head>
+  <body>
+    <p>給我醒來！！！！<br>
+      <br>
+      <span onmouseover="turn(1)" onmouseout="turn(0)"><img id="bonk" src="hit_head1.png" width="320px"></span>
+    </p>
+  </body>
+</html>

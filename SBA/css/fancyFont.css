@@ -1,0 +1,47 @@
+@font-face {
+    font-family: MSJH;
+    src: url(../assets/msjh.ttf);
+}
+@font-face {
+    font-family: GYMTC;
+    src: url(../assets/GenYoMin2TC-R.otf);
+}
+rt {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 75%;
+}
+.collapsible {
+    background-color: #3949a3;
+    color: #FFF;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+    background-color: #334191;
+    color: #FFF;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+    display: none;
+    overflow: hidden;
+    background-color: #FFF;
+}
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.white {
+    background-color: white;
+}
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Square</title>
+</head>
+<body>
+    <p style="font-family: 'Courier New', Courier, monospace;">
+        <script>
+            let st = prompt("輸入一字符：");
+            let num = 7; let strings = '';
+            for(let i=1; i<=num; i++){
+                for(let k=1; k<= num; k++){
+                    if(i===1 || i===num){
+                        strings += st;
+                    }else if(true){
+                        if(k===1 || k===num){
+                            strings += st;
+                        }else{
+                            strings += '&nbsp;';
+                        }
+                    }
+                }
+                strings += '<br>';
+            }
+            document.write(strings);
+        </script>
+    </p>
+</body>
+</html>
